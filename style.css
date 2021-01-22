@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(to left, #8e44ad, #3498db);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    height: 500px;
+    width: 400px;
+    padding: 25px 10px;
+}
+
+.container form {
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    font-family: 'Roboto', sans-serif;
+    height: 50px;
+    width: 300px;
+    border-style: solid;
+    border-width: 0px;
+    border-bottom-width: 2px;
+    border-color: #2c3e50;
+    font-size: 25px;
+    color:#2c3e50;
+    padding-left: 10px;
+    outline: none;
+}
+
+input::placeholder{
+    color: #7f8c8d;
+}
+
+form button{
+    height: 54px;
+    width: 54px;
+    font-size: 30px;
+    text-align: center;
+    background-color: #2ecc71;
+    border-width: 0px;
+    color: white;
+    transition: border-radius 0.5s ease-in-out;
+    outline: none;
+    cursor: pointer;
+}
+
+form button:hover{
+    border-radius: 100%;
+}
+
+.taskList{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
+    align-items: center;
+}
+
+.taskDiv{
+    width: 300px;
+    min-height: 50px;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 15px;
+    display: flex;
+    padding-left: 5px;
+    transition: all .25s ease-in-out;
+}
+
+.taskDiv:hover{
+    margin-left: 50px;
+}
+
+.taskLi{
+    flex: 2;
+    font-size: 20px;
+    color: #2c3e50;
+    width:100%
+}
+
+.eraseBtn, .checkBtn{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    color: #2c3e50;
+    outline: none;
+    border-style: none;
+    transition: background .25s ease-in-out;
+    cursor: pointer;
+}
+
+.eraseBtn:hover{
+    background-color: #e74c3c;
+    color: white;
+}
+.checkBtn:hover{
+    background-color: #1abc9c;
+    color: white;
+}
+
+.eraseBtn i, .checkBtn i{
+    pointer-events: none;
+}
+
+.checked{
+    opacity: .5;
+    text-decoration: line-through;
+}
